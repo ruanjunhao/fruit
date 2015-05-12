@@ -1,0 +1,22 @@
+//
+//  upwallet.pch
+//  wallet
+//
+//  Created by TZ_JSKFZX_CAOQ on 14-9-22.
+//  Copyright (c) 2014年 China Unionpay Co.,Ltd. All rights reserved.
+//
+
+#ifndef wallet_upwallet_pch
+#define wallet_upwallet_pch
+
+#import "UPWDebug.h"
+#import "UPWLog.h"
+#import "UPWMarco.h"
+#import "UPWDataCollectMgr.h"
+#import "UPWAppUtil.h"
+#import "UPWSizeUtil.h"
+#import "UPWGlobalData.h"
+
+#endif
+
+

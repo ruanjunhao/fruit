@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC1C5A9B1953062100B6B2D4 /* ShareMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43D74F1951858000DE7B12 /* ShareMgr.m */; };
+		BC43D7641951858000DE7B12 /* smsShare.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43D7561951858000DE7B12 /* smsShare.m */; };
+		BC43D7681951858000DE7B12 /* weixinShare.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43D7611951858000DE7B12 /* weixinShare.m */; };
+		BC43D7A019519EE700DE7B12 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC43D79619519EE700DE7B12 /* libWeChatSDK.a */; };
+		BC43D8051952706200DE7B12 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC43D8021952706200DE7B12 /* libWeiboSDK.a */; };
+		BC5EC0E219517F6F003D9F92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5EC0E119517F6F003D9F92 /* Foundation.framework */; };
+		BC5EC0F019517F6F003D9F92 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5EC0EF19517F6F003D9F92 /* XCTest.framework */; };
+		BC5EC0F119517F6F003D9F92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5EC0E119517F6F003D9F92 /* Foundation.framework */; };
+		BC5EC0F319517F6F003D9F92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5EC0F219517F6F003D9F92 /* UIKit.framework */; };
+		BC5EC0F619517F6F003D9F92 /* libShareMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5EC0DE19517F6F003D9F92 /* libShareMgr.a */; };
+		BC8523291952860D000930BD /* weiboShare.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43D75E1951858000DE7B12 /* weiboShare.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC5EC0F419517F6F003D9F92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC5EC0D619517F6F003D9F92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC5EC0DD19517F6F003D9F92;
+			remoteInfo = ShareMgr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC5EC0DC19517F6F003D9F92 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC43D74E1951858000DE7B12 /* ShareMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareMgr.h; sourceTree = "<group>"; };
+		BC43D74F1951858000DE7B12 /* ShareMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareMgr.m; sourceTree = "<group>"; };
+		BC43D7551951858000DE7B12 /* smsShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smsShare.h; sourceTree = "<group>"; };
+		BC43D7561951858000DE7B12 /* smsShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsShare.m; sourceTree = "<group>"; };
+		BC43D75D1951858000DE7B12 /* weiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboShare.h; sourceTree = "<group>"; };
+		BC43D75E1951858000DE7B12 /* weiboShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboShare.m; sourceTree = "<group>"; };
+		BC43D7601951858000DE7B12 /* weixinShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weixinShare.h; sourceTree = "<group>"; };
+		BC43D7611951858000DE7B12 /* weixinShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weixinShare.m; sourceTree = "<group>"; };
+		BC43D79619519EE700DE7B12 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		BC43D79719519EE700DE7B12 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		BC43D79819519EE700DE7B12 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		BC43D8021952706200DE7B12 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		BC43D8031952706200DE7B12 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		BC43D8041952706200DE7B12 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		BC5EC0DE19517F6F003D9F92 /* libShareMgr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShareMgr.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC5EC0E119517F6F003D9F92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC5EC0E519517F6F003D9F92 /* ShareMgr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShareMgr-Prefix.pch"; sourceTree = "<group>"; };
+		BC5EC0EE19517F6F003D9F92 /* ShareMgrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareMgrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC5EC0EF19517F6F003D9F92 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BC5EC0F219517F6F003D9F92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC5EC0DB19517F6F003D9F92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC43D7A019519EE700DE7B12 /* libWeChatSDK.a in Frameworks */,
+				BC43D8051952706200DE7B12 /* libWeiboSDK.a in Frameworks */,
+				BC5EC0E219517F6F003D9F92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EC0EB19517F6F003D9F92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5EC0F619517F6F003D9F92 /* libShareMgr.a in Frameworks */,
+				BC5EC0F019517F6F003D9F92 /* XCTest.framework in Frameworks */,
+				BC5EC0F319517F6F003D9F92 /* UIKit.framework in Frameworks */,
+				BC5EC0F119517F6F003D9F92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC43D7501951858000DE7B12 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				BC43D7551951858000DE7B12 /* smsShare.h */,
+				BC43D7561951858000DE7B12 /* smsShare.m */,
+				BC43D75D1951858000DE7B12 /* weiboShare.h */,
+				BC43D75E1951858000DE7B12 /* weiboShare.m */,
+				BC43D7601951858000DE7B12 /* weixinShare.h */,
+				BC43D7611951858000DE7B12 /* weixinShare.m */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		BC43D76B19519EA100DE7B12 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				BC43D8011952706200DE7B12 /* libWeiboSDK */,
+				BC43D79519519EE700DE7B12 /* WeiXin */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		BC43D79519519EE700DE7B12 /* WeiXin */ = {
+			isa = PBXGroup;
+			children = (
+				BC43D79619519EE700DE7B12 /* libWeChatSDK.a */,
+				BC43D79719519EE700DE7B12 /* WXApi.h */,
+				BC43D79819519EE700DE7B12 /* WXApiObject.h */,
+			);
+			path = WeiXin;
+			sourceTree = "<group>";
+		};
+		BC43D8011952706200DE7B12 /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BC43D8021952706200DE7B12 /* libWeiboSDK.a */,
+				BC43D8031952706200DE7B12 /* WeiboSDK.bundle */,
+				BC43D8041952706200DE7B12 /* WeiboSDK.h */,
+			);
+			name = libWeiboSDK;
+			path = weibo_ios_sdk/libWeiboSDK;
+			sourceTree = "<group>";
+		};
+		BC5EC0D519517F6F003D9F92 = {
+			isa = PBXGroup;
+			children = (
+				BC5EC0E319517F6F003D9F92 /* ShareMgr */,
+				BC5EC0E019517F6F003D9F92 /* Frameworks */,
+				BC5EC0DF19517F6F003D9F92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC5EC0DF19517F6F003D9F92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC5EC0DE19517F6F003D9F92 /* libShareMgr.a */,
+				BC5EC0EE19517F6F003D9F92 /* ShareMgrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC5EC0E019517F6F003D9F92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC5EC0E119517F6F003D9F92 /* Foundation.framework */,
+				BC5EC0EF19517F6F003D9F92 /* XCTest.framework */,
+				BC5EC0F219517F6F003D9F92 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC5EC0E319517F6F003D9F92 /* ShareMgr */ = {
+			isa = PBXGroup;
+			children = (
+				BC43D76B19519EA100DE7B12 /* Lib */,
+				BC43D7501951858000DE7B12 /* Src */,
+				BC43D74E1951858000DE7B12 /* ShareMgr.h */,
+				BC43D74F1951858000DE7B12 /* ShareMgr.m */,
+				BC5EC0E419517F6F003D9F92 /* Supporting Files */,
+			);
+			path = ShareMgr;
+			sourceTree = "<group>";
+		};
+		BC5EC0E419517F6F003D9F92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC5EC0E519517F6F003D9F92 /* ShareMgr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC5EC0DD19517F6F003D9F92 /* ShareMgr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC5EC10119517F6F003D9F92 /* Build configuration list for PBXNativeTarget "ShareMgr" */;
+			buildPhases = (
+				BC5EC0DA19517F6F003D9F92 /* Sources */,
+				BC5EC0DB19517F6F003D9F92 /* Frameworks */,
+				BC5EC0DC19517F6F003D9F92 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareMgr;
+			productName = ShareMgr;
+			productReference = BC5EC0DE19517F6F003D9F92 /* libShareMgr.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BC5EC0ED19517F6F003D9F92 /* ShareMgrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC5EC10419517F6F003D9F92 /* Build configuration list for PBXNativeTarget "ShareMgrTests" */;
+			buildPhases = (
+				BC5EC0EA19517F6F003D9F92 /* Sources */,
+				BC5EC0EB19517F6F003D9F92 /* Frameworks */,
+				BC5EC0EC19517F6F003D9F92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC5EC0F519517F6F003D9F92 /* PBXTargetDependency */,
+			);
+			name = ShareMgrTests;
+			productName = ShareMgrTests;
+			productReference = BC5EC0EE19517F6F003D9F92 /* ShareMgrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC5EC0D619517F6F003D9F92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = UP;
+			};
+			buildConfigurationList = BC5EC0D919517F6F003D9F92 /* Build configuration list for PBXProject "ShareMgr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC5EC0D519517F6F003D9F92;
+			productRefGroup = BC5EC0DF19517F6F003D9F92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC5EC0DD19517F6F003D9F92 /* ShareMgr */,
+				BC5EC0ED19517F6F003D9F92 /* ShareMgrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC5EC0EC19517F6F003D9F92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC5EC0DA19517F6F003D9F92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC43D7641951858000DE7B12 /* smsShare.m in Sources */,
+				BC1C5A9B1953062100B6B2D4 /* ShareMgr.m in Sources */,
+				BC8523291952860D000930BD /* weiboShare.m in Sources */,
+				BC43D7681951858000DE7B12 /* weixinShare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EC0EA19517F6F003D9F92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC5EC0F519517F6F003D9F92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC5EC0DD19517F6F003D9F92 /* ShareMgr */;
+			targetProxy = BC5EC0F419517F6F003D9F92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC5EC0FF19517F6F003D9F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC5EC10019517F6F003D9F92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC5EC10219517F6F003D9F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ShareMgr.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareMgr/ShareMgr-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareMgr/Lib/WeiXin",
+					"$(PROJECT_DIR)/ShareMgr/Lib/weibo_ios_sdk/libWeiboSDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		BC5EC10319517F6F003D9F92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ShareMgr.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareMgr/ShareMgr-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareMgr/Lib/WeiXin",
+					"$(PROJECT_DIR)/ShareMgr/Lib/weibo_ios_sdk/libWeiboSDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		BC5EC10519517F6F003D9F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareMgr/ShareMgr-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShareMgrTests/ShareMgrTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareMgr/Lib/weibo_ios_sdk/libWeiboSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BC5EC10619517F6F003D9F92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareMgr/ShareMgr-Prefix.pch";
+				INFOPLIST_FILE = "ShareMgrTests/ShareMgrTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareMgr/Lib/weibo_ios_sdk/libWeiboSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC5EC0D919517F6F003D9F92 /* Build configuration list for PBXProject "ShareMgr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5EC0FF19517F6F003D9F92 /* Debug */,
+				BC5EC10019517F6F003D9F92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC5EC10119517F6F003D9F92 /* Build configuration list for PBXNativeTarget "ShareMgr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5EC10219517F6F003D9F92 /* Debug */,
+				BC5EC10319517F6F003D9F92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC5EC10419517F6F003D9F92 /* Build configuration list for PBXNativeTarget "ShareMgrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5EC10519517F6F003D9F92 /* Debug */,
+				BC5EC10619517F6F003D9F92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC5EC0D619517F6F003D9F92 /* Project object */;
+}

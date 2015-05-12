@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certType</key>
+	<array>
+		<dict>
+			<key>code</key>
+			<string>01</string>
+			<key>name</key>
+			<string>身份证</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>02</string>
+			<key>name</key>
+			<string>军官证</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>03</string>
+			<key>name</key>
+			<string>护照</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>04</string>
+			<key>name</key>
+			<string>回乡证</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>05</string>
+			<key>name</key>
+			<string>台胞证</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>06</string>
+			<key>name</key>
+			<string>警官证</string>
+		</dict>
+		<dict>
+			<key>code</key>
+			<string>07</string>
+			<key>name</key>
+			<string>士兵证</string>
+		</dict>
+	</array>
+</dict>
+</plist>

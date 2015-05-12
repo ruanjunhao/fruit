@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>defaultAppInfo</key>
+	<dict>
+		<key>1</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>jiaofei</string>
+		<key>destParams</key>
+		<string>{"type":"1"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_water.png</string>
+		<key>id</key>
+		<string>1</string>
+		<key>name</key>
+		<string>水费</string>
+		<key>perm</key>
+		<string>1100</string>
+		<key>seq</key>
+		<string>6</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>4</string>
+	</dict>
+	<key>10</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>02</string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://tcpapp1.sino-cup.net:8080/uplugin/page/lottery/index.jsp</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_lottery.png</string>
+		<key>id</key>
+		<string>10</string>
+		<key>name</key>
+		<string>彩票</string>
+		<key>perm</key>
+		<string>1000</string>
+		<key>seq</key>
+		<string>7</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>16</string>
+	</dict>
+	<key>12</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string> </string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>fakuan</string>
+		<key>destParams</key>
+		<string>{"bussCode":"26"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_penalty.png</string>
+		<key>id</key>
+		<string>12</string>
+		<key>name</key>
+		<string>违章代办</string>
+		<key>perm</key>
+		<string>1000</string>
+		<key>seq</key>
+		<string>3</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>15</string>
+	</dict>
+	<key>14</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>jiaofei</string>
+		<key>destParams</key>
+		<string>{"type":"s01"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_chinaMobile.png</string>
+		<key>id</key>
+		<string>14</string>
+		<key>name</key>
+		<string>移动缴费</string>
+		<key>perm</key>
+		<string>0100</string>
+		<key>seq</key>
+		<string>33</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>4</string>
+	</dict>
+	<key>15</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>jiaofei</string>
+		<key>destParams</key>
+		<string>{"type":"s02"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_chinaUnicom.png</string>
+		<key>id</key>
+		<string>15</string>
+		<key>name</key>
+		<string>联通缴费</string>
+		<key>perm</key>
+		<string>0100</string>
+		<key>seq</key>
+		<string>34</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>5</string>
+	</dict>
+	<key>16</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>jiaofei</string>
+		<key>destParams</key>
+		<string>{"type":"s03"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_chinaTelecom.png</string>
+		<key>id</key>
+		<string>16</string>
+		<key>name</key>
+		<string>电信缴费</string>
+		<key>perm</key>
+		<string>0100</string>
+		<key>seq</key>
+		<string>35</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>4</string>
+	</dict>
+	<key>18</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>02</string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://www.jhm2013.com:7002/tlc_tj/tlcsy</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_financial.png</string>
+		<key>id</key>
+		<string>18</string>
+		<key>name</key>
+		<string>理财</string>
+		<key>perm</key>
+		<string>0000</string>
+		<key>seq</key>
+		<string>37</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>2</string>
+	</dict>
+	<key>19</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>02</string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://tcpapp1.sino-cup.net:8080/uplugin/page/air/index.jsp</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_airTicket.png</string>
+		<key>id</key>
+		<string>19</string>
+		<key>name</key>
+		<string>飞机票</string>
+		<key>perm</key>
+		<string>0000</string>
+		<key>seq</key>
+		<string>38</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>1</string>
+	</dict>
+	<key>2</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>jiaofei</string>
+		<key>destParams</key>
+		<string>{"type":"3"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_gas.png</string>
+		<key>id</key>
+		<string>2</string>
+		<key>name</key>
+		<string>燃气费</string>
+		<key>perm</key>
+		<string>1100</string>
+		<key>seq</key>
+		<string>2</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>4</string>
+	</dict>
+	<key>21</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string> </string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://www.51zhangdan.com/www_bks/index.html?channel=unionpay</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_51zhangdan.png</string>
+		<key>id</key>
+		<string>21</string>
+		<key>name</key>
+		<string>51信用卡申请</string>
+		<key>perm</key>
+		<string>0010</string>
+		<key>seq</key>
+		<string>8</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>5</string>
+	</dict>
+	<key>22</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string> </string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://rome-appview.unionpaysmart.com/</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>111</string>
+		<key>id</key>
+		<string>22</string>
+		<key>name</key>
+		<string>ATM送彩查询</string>
+		<key>perm</key>
+		<string>1001</string>
+		<key>seq</key>
+		<string>12</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>3</string>
+	</dict>
+	<key>25</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string> </string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://tcpapp1.sino-cup.net:8080/uplugin/page/movie/index.jsp</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>0</string>
+		<key>iconUrl</key>
+		<string>http://unionpay.sino-cup.net:8080/k4/movie.png</string>
+		<key>id</key>
+		<string>25</string>
+		<key>name</key>
+		<string>电影票</string>
+		<key>perm</key>
+		<string>0000</string>
+		<key>seq</key>
+		<string>45</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>6</string>
+	</dict>
+	<key>26</key>
+	<dict>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>yue_05</string>
+		<key>iconUrl</key>
+		<string>http://120.204.69.168:1725/appres/app3/icon/ic_home_balance.png</string>
+		<key>id</key>
+		<string>26</string>
+		<key>name</key>
+		<string>余额查询</string>
+		<key>perm</key>
+		<string>1100</string>
+		<key>seq</key>
+		<string>1</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>0</string>
+	</dict>
+	<key>27</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string> </string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://tcpapp1.sino-cup.net:8080/uplugin/page/train/index.jsp</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>http://unionpay.sino-cup.net:8080/k4/train.png</string>
+		<key>id</key>
+		<string>27</string>
+		<key>name</key>
+		<string>火车票</string>
+		<key>perm</key>
+		<string>0000</string>
+		<key>seq</key>
+		<string>46</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>1</string>
+	</dict>
+	<key>28</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string> </string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://www.hitour.cc/activity/1111</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>http://www.hitour.cc/k4/hitour.png</string>
+		<key>id</key>
+		<string>28</string>
+		<key>name</key>
+		<string>玩途</string>
+		<key>perm</key>
+		<string>1000</string>
+		<key>seq</key>
+		<string>55</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>13</string>
+	</dict>
+	<key>29</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>trans</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_trans.png</string>
+		<key>id</key>
+		<string>29</string>
+		<key>name</key>
+		<string>交易查询</string>
+		<key>perm</key>
+		<string>1000</string>
+		<key>seq</key>
+		<string>14</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>5</string>
+	</dict>
+	<key>3</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>huankuan</string>
+		<key>destParams</key>
+		<string>{"bussCode":"00-0031-0001"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_wallet.png</string>
+		<key>id</key>
+		<string>3</string>
+		<key>name</key>
+		<string>信用卡还款</string>
+		<key>perm</key>
+		<string>1100</string>
+		<key>seq</key>
+		<string>5</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>4</string>
+	</dict>
+	<key>4</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>chongzhi</string>
+		<key>destParams</key>
+		<string>{"bussCode":"00-0043-CP01"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_recharge.png</string>
+		<key>id</key>
+		<string>4</string>
+		<key>name</key>
+		<string>手机充值</string>
+		<key>perm</key>
+		<string>1100</string>
+		<key>seq</key>
+		<string>1</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>17</string>
+	</dict>
+	<key>6</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg string</string>
+		<key>dest</key>
+		<string>jiaofei</string>
+		<key>destParams</key>
+		<string>{"type":"2"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_elect.png</string>
+		<key>id</key>
+		<string>6</string>
+		<key>name</key>
+		<string>电费</string>
+		<key>perm</key>
+		<string>1100</string>
+		<key>seq</key>
+		<string>4</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>4</string>
+	</dict>
+	<key>8</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>01</string>
+		<key>config</key>
+		<string>cfg</string>
+		<key>dest</key>
+		<string>jiaofei</string>
+		<key>destParams</key>
+		<string>{"type":"28"}</string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_property.png</string>
+		<key>id</key>
+		<string>8</string>
+		<key>name</key>
+		<string>物业费</string>
+		<key>perm</key>
+		<string>0100</string>
+		<key>seq</key>
+		<string>21</string>
+		<key>type</key>
+		<string>native</string>
+		<key>v</key>
+		<string>6</string>
+	</dict>
+	<key>9</key>
+	<dict>
+		<key>badgeInfo</key>
+		<string> </string>
+		<key>badgeUrl</key>
+		<string> </string>
+		<key>classification</key>
+		<string>02</string>
+		<key>config</key>
+		<string>UPWebBars,UPWebPay,UPWebUI,UPWebUserInfo,UPWebUserLogin,UPWebClosePage,App</string>
+		<key>dest</key>
+		<string>http://tcpapp1.sino-cup.net:8080/uplugin/page/gamecard/index.jsp</string>
+		<key>destParams</key>
+		<string> </string>
+		<key>display</key>
+		<string>1</string>
+		<key>iconUrl</key>
+		<string>https://mgate.unionpay.com/s/wl/icon/ic_home_gamecard.png</string>
+		<key>id</key>
+		<string>9</string>
+		<key>name</key>
+		<string>游戏点卡</string>
+		<key>perm</key>
+		<string>1000</string>
+		<key>seq</key>
+		<string>10</string>
+		<key>type</key>
+		<string>html</string>
+		<key>v</key>
+		<string>10</string>
+	</dict>
+	</dict>
+</dict>
+</plist>

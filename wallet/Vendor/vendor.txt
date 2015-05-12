@@ -1,0 +1,8 @@
+CocoaLumberjack 1.9.2
+Cordova 3.6.3
+TalkingData 1.0.14
+JSONModel 1.0.1
+SDWebImage 3.7.1
+AFNetworking 2.4.1
+SVPullToRefresh 0.4.1
+BaiduMapSDK 2.4.1

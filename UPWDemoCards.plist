@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bindRelations</key>
+	<array>
+		<dict>
+			<key>bank</key>
+			<string>银联卡</string>
+			<key>bindId</key>
+			<string>1500024681</string>
+			<key>cardCode</key>
+			<string>01</string>
+			<key>cardType</key>
+			<string>储蓄卡</string>
+			<key>iconUrl</key>
+			<string></string>
+			<key>pan</key>
+			<string>6288888888888888</string>
+			<key>supPay</key>
+			<string>1</string>
+			<key>shortening</key>
+			<string> </string>
+			<key>supBalance</key>
+			<string>1</string>
+			<key>supCredit</key>
+			<string>1</string>
+			<key>isDemo</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

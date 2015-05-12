@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cardDetail</key>
+	<array>
+		<dict>
+			<key>label</key>
+			<string>信用卡还款</string>
+			<key>key</key>
+			<string>supCredit</string>
+			<key>icon</key>
+			<string>icon_card_supcredit</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>积分返现</string>
+			<key>key</key>
+			<string>points</string>
+			<key>icon</key>
+			<string>icon_card_points</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>交易记录查询</string>
+			<key>key</key>
+			<string>bill</string>
+			<key>icon</key>
+			<string>icon_card_bill</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>附近的ATM</string>
+			<key>key</key>
+			<string>atm</string>
+			<key>icon</key>
+			<string>icon_card_atm</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>短信服务</string>
+			<key>key</key>
+			<string>smsService</string>
+			<key>icon</key>
+			<string>icon_card_sms</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>客服电话</string>
+			<key>key</key>
+			<string>phone</string>
+			<key>icon</key>
+			<string>icon_card_phone</string>
+		</dict>
+	</array>
+</dict>
+</plist>
