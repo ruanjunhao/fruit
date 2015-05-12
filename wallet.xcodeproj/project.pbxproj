@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F75EBFB1B02500C0095665B /* UPWHomeTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F75EBFA1B02500C0095665B /* UPWHomeTemplateView.m */; };
 		5FD992411AFF3BF60080177C /* UPXTextboxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD992401AFF3BF60080177C /* UPXTextboxButton.m */; };
 		5FD992451AFF3D690080177C /* UPXPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD992441AFF3D690080177C /* UPXPickerView.m */; };
 		911709AE1A6CA264002F8DA1 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 911709AD1A6CA264002F8DA1 /* AMap.bundle */; };
@@ -207,7 +208,6 @@
 		C253E0E41AB46E1F00789F45 /* UPWShoppingCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C253E0E31AB46E1F00789F45 /* UPWShoppingCartModel.m */; };
 		C253E0E71AB46FC300789F45 /* UPWShoppingCartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C253E0E61AB46FC300789F45 /* UPWShoppingCartTableViewCell.m */; };
 		C253E0EA1AB5719900789F45 /* UPWConfirmOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C253E0E91AB5719900789F45 /* UPWConfirmOrderViewController.m */; };
-		C296ED771AAFE112002D9492 /* UPWHomeTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C296ED761AAFE112002D9492 /* UPWHomeTemplateView.m */; };
 		C2B0171819EE1B6200E6357F /* UPImageTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B0171719EE1B6200E6357F /* UPImageTextField.m */; };
 		C2B0171B19EE1BFC00E6357F /* UPWLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B0171A19EE1BFC00E6357F /* UPWLinkLabel.m */; };
 		C2B30E5D19F8E03B00661CFD /* UPWLinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B30E5C19F8E03B00661CFD /* UPWLinkView.m */; };
@@ -299,6 +299,8 @@
 
 /* Begin PBXFileReference section */
 		5F75EBF81B022CBE0095665B /* wallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = wallet.entitlements; sourceTree = "<group>"; };
+		5F75EBF91B02500C0095665B /* UPWHomeTemplateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWHomeTemplateView.h; sourceTree = "<group>"; };
+		5F75EBFA1B02500C0095665B /* UPWHomeTemplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWHomeTemplateView.m; sourceTree = "<group>"; };
 		5FD9923F1AFF3BF60080177C /* UPXTextboxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPXTextboxButton.h; sourceTree = "<group>"; };
 		5FD992401AFF3BF60080177C /* UPXTextboxButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPXTextboxButton.m; sourceTree = "<group>"; };
 		5FD992431AFF3D690080177C /* UPXPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPXPickerView.h; sourceTree = "<group>"; };
@@ -708,8 +710,6 @@
 		C253E0E61AB46FC300789F45 /* UPWShoppingCartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWShoppingCartTableViewCell.m; sourceTree = "<group>"; };
 		C253E0E81AB5719900789F45 /* UPWConfirmOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWConfirmOrderViewController.h; sourceTree = "<group>"; };
 		C253E0E91AB5719900789F45 /* UPWConfirmOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWConfirmOrderViewController.m; sourceTree = "<group>"; };
-		C296ED751AAFE112002D9492 /* UPWHomeTemplateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWHomeTemplateView.h; sourceTree = "<group>"; };
-		C296ED761AAFE112002D9492 /* UPWHomeTemplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWHomeTemplateView.m; sourceTree = "<group>"; };
 		C2B0171619EE1B6200E6357F /* UPImageTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPImageTextField.h; sourceTree = "<group>"; };
 		C2B0171719EE1B6200E6357F /* UPImageTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPImageTextField.m; sourceTree = "<group>"; };
 		C2B0171919EE1BFC00E6357F /* UPWLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWLinkLabel.h; sourceTree = "<group>"; };
@@ -1524,8 +1524,6 @@
 				BC4FE5CE19F798210061BB91 /* UPWLoadingView.m */,
 				BC6814C61A47B7F0001FB0B2 /* UPWActionSheet.h */,
 				BC6814C71A47B7F0001FB0B2 /* UPWActionSheet.m */,
-				C296ED751AAFE112002D9492 /* UPWHomeTemplateView.h */,
-				C296ED761AAFE112002D9492 /* UPWHomeTemplateView.m */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -1851,6 +1849,8 @@
 		C2E0BDB11AC42961004FDBAC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5F75EBF91B02500C0095665B /* UPWHomeTemplateView.h */,
+				5F75EBFA1B02500C0095665B /* UPWHomeTemplateView.m */,
 				C2E0BDB21AC42961004FDBAC /* UPWFeaturedAppCell.h */,
 				C2E0BDB31AC42961004FDBAC /* UPWFeaturedAppCell.m */,
 			);
@@ -2262,6 +2262,7 @@
 				C2E0BDC41AC42B77004FDBAC /* UPWFeaturedAppModel.m in Sources */,
 				C2455D9A19EB6D70000952D6 /* UIImage+GIF.m in Sources */,
 				BC1FDF3C19DA42A600D35DB1 /* UPWLocalStorage.m in Sources */,
+				5F75EBFB1B02500C0095665B /* UPWHomeTemplateView.m in Sources */,
 				9401350A19FE337D005BFF6B /* UPXPluginNetwork.m in Sources */,
 				BC43E79D19D93CF50073BC28 /* UPXToast.m in Sources */,
 				BC24F8E719D0057C00482832 /* CDVInvokedUrlCommand.m in Sources */,
@@ -2331,7 +2332,6 @@
 				9484AF9C1A01CEC00087734F /* SPLockScreen.m in Sources */,
 				BCBAE6A61A1F671700D68210 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				C253E0E11AB4194700789F45 /* UPWTotalPricePanel.m in Sources */,
-				C296ED771AAFE112002D9492 /* UPWHomeTemplateView.m in Sources */,
 				BCBAE6A71A1F671700D68210 /* TPKeyboardAvoidingTableView.m in Sources */,
 				BC302FF519D2680F00E955C3 /* JSONModelError.m in Sources */,
 				D43F303619F5F5760093B534 /* rscode.m in Sources */,

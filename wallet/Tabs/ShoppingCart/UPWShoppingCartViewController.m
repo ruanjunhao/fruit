@@ -370,12 +370,13 @@
         [_passiveDelActionSheet showInView:_contentView];
     } else {
         [_shoppingCartListModel.data replaceObjectAtIndex:indexPath.row withObject:cellModel];
+        
+        //只有当真正删除后，才修改本地购物车数据
+        [UPWFileUtil writeContent:_shoppingCartListModel.toDictionary path:[UPWPathUtil shoppingCartPlistPath]];
     }
     
     [_tableView reloadData];
-    //修改本地购物车数据
-    [UPWFileUtil writeContent:_shoppingCartListModel.toDictionary path:[UPWPathUtil shoppingCartPlistPath]];
-    
+
     [self calculateTotalPrice];
     
     [UPWBussUtil refreshCartDot];
@@ -439,8 +440,10 @@
         } else {
             for (NSInteger i = 0; i < _shoppingCartListModel.data.count; i++) {
                 UPWShoppingCartCellModel *cellModel = _shoppingCartListModel.data[i];
-                cellModel.fruitNum = [NSString stringWithFormat:@"%d", cellModel.fruitNum.integerValue + 1];
-                [_shoppingCartListModel.data replaceObjectAtIndex:i withObject:cellModel];
+                if (cellModel.fruitNum.doubleValue <= 0) {
+                    cellModel.fruitNum = [NSString stringWithFormat:@"%d", cellModel.fruitNum.integerValue + 1];
+                    [_shoppingCartListModel.data replaceObjectAtIndex:i withObject:cellModel];
+                }
             }
         }
         

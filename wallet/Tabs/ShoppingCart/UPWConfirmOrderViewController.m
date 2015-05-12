@@ -160,14 +160,13 @@ typedef enum{
     UPWMessage* message = [UPWMessage messageDeliveryAddressWithParams:params];
     __weak typeof(self) wself = self;
     [[UPWHttpMgr instance] sendMessage:message success:^(NSDictionary *responseJSON) {
-        NSDictionary* params =  responseJSON;
-        [wself updateDeliveryAddressWithParams:params];
+        [wself updateDeliveryAddressWithParams:responseJSON];
     } fail:^(NSError * error) {
         [wself updateDeliveryAddressWithError:error];
         
-#warning 测试数据
-        NSDictionary* params =  @{@"hasMore":@"0", @"data":@[@{@"userName":@"鲜先生1", @"phoneNum":@"15893857483", @"userAddress":@"上海市浦东新区元泰路388号上海市浦东新区元泰路388号"}, @{@"userName":@"鲜先生2", @"phoneNum":@"15893857483", @"userAddress":@"上海市浦东新区元泰路388号"}, @{@"userName":@"鲜先生3", @"phoneNum":@"15893857483", @"userAddress":@"上海市浦东新区元泰路388号"}, @{@"userName":@"鲜先生4", @"phoneNum":@"15893857483", @"userAddress":@"上海市浦东新区元泰路388号"}]};
-        [self updateDeliveryAddressWithParams:params];
+//#warning 测试数据
+//        NSDictionary* params =  @{@"hasMore":@"0", @"data":@[@{@"userName":@"鲜先生1", @"phoneNum":@"15893857483", @"userAddress":@"上海市浦东新区元泰路388号上海市浦东新区元泰路388号"}, @{@"userName":@"鲜先生2", @"phoneNum":@"15893857483", @"userAddress":@"上海市浦东新区元泰路388号"}, @{@"userName":@"鲜先生3", @"phoneNum":@"15893857483", @"userAddress":@"上海市浦东新区元泰路388号"}, @{@"userName":@"鲜先生4", @"phoneNum":@"15893857483", @"userAddress":@"上海市浦东新区元泰路388号"}]};
+//        [self updateDeliveryAddressWithParams:params];
     }];
     [self addMessage:message];
 }

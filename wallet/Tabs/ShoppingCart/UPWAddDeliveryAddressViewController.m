@@ -221,14 +221,12 @@
     UPWMessage* message = [UPWMessage messageUploadNewDeliveryAddrWithParams:params];
     __weak typeof(self) wself = self;
     [[UPWHttpMgr instance] sendMessage:message success:^(NSDictionary *responseJSON) {
-        
-        NSDictionary* params =  responseJSON;
-        [wself receivedWithParams:params];
+        [wself receivedWithParams:responseJSON[@"data"]];
     } fail:^(NSError * error) {
         [wself failedWithError:error];
         
-#warning 测试数据
-        [self receivedWithParams:params];
+//#warning 测试数据
+//        [self receivedWithParams:params];
     }];
     [self addMessage:message];
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3B3E13E6-1A02-4DFC-86D5-649F4298862D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wallet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A718C013016F5844F6D7AF24EA0534F53D7CFF4D</key>
+		<string>https://github.com/huanwei4004/fruit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wallet.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A718C013016F5844F6D7AF24EA0534F53D7CFF4D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/huanwei4004/fruit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A718C013016F5844F6D7AF24EA0534F53D7CFF4D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A718C013016F5844F6D7AF24EA0534F53D7CFF4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fruit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
