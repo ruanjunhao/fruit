@@ -51,7 +51,7 @@
         x = 0;
         y = CGRectGetMaxY(_nameLabel.frame);
         width = CGRectGetWidth(frame)*2/3;
-        height = (CGRectGetHeight(frame)-CGRectGetHeight(_nameLabel.frame))*2/3;
+        height = CGRectGetHeight(frame)-CGRectGetHeight(_nameLabel.frame);
         UIControl *control1 = [[UIControl alloc] initWithFrame:CGRectMake(x, y, width, height)];
         control1.backgroundColor = [UIColor clearColor];
         control1.layer.borderWidth = 0.5;
@@ -62,7 +62,7 @@
         
         x = CGRectGetMaxX(control1.frame) + gap;
         width = (CGRectGetWidth(frame)-2*gap)*1/3;
-        height = (CGRectGetHeight(frame)-CGRectGetHeight(_nameLabel.frame)-2*gap)*1/3;
+        height = (CGRectGetHeight(frame)-CGRectGetHeight(_nameLabel.frame)-gap)/2;
         UIControl *control2 = [[UIControl alloc] initWithFrame:CGRectMake(x, y, width, height)];
         control2.backgroundColor = [UIColor clearColor];
         control2.layer.borderWidth = 0.5;
@@ -79,7 +79,7 @@
         [control3 addTarget:self action:@selector(tapAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:control3];
         [_controlArray addObject:control3];
-        
+        /*
         x = 0;
         y = CGRectGetMaxY(control1.frame) + gap;
         UIControl *control4 = [[UIControl alloc] initWithFrame:CGRectMake(x, y, width, height)];
@@ -107,7 +107,8 @@
         control6.layer.borderColor = UP_COL_RGB(0xd4d4d4).CGColor;
         [control6 addTarget:self action:@selector(tapAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:control6];
-        [_controlArray addObject:control6];        
+        [_controlArray addObject:control6];
+         */
     }
     
     return self;

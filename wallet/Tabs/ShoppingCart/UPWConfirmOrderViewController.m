@@ -24,11 +24,17 @@
 #define kHeightShoppingCartHeader 40
 #define kHeightNormalCell 44
 
-typedef enum{
-    ECashOnDeliveryPayType,
-    EWeChatPayType,
-    EALiPayType
-}EPayType;
+//typedef enum{
+//    ECashOnDeliveryPayType = 1,
+//    EWeChatPayType = 2,
+//    EALiPayType = 3
+//}EPayType;
+
+typedef NS_ENUM(NSInteger, EPayType) {
+    ECashOnDeliveryPayType = 1,
+    EWeChatPayType = 2,
+    EALiPayType = 3
+};
 
 @interface UPWConfirmOrderViewController () <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 {
@@ -455,7 +461,7 @@ typedef enum{
     NSString *userId = ([UPWGlobalData sharedData].accountInfo.userId==nil)?@"":[UPWGlobalData sharedData].accountInfo.userId;
     NSDictionary *addrInfo = @{@"province":deliveryAddrCellModel.addrInfo.province, @"city":deliveryAddrCellModel.addrInfo.city, @"region":deliveryAddrCellModel.addrInfo.region, @"detailAddr":deliveryAddrCellModel.addrInfo.detailAddr};
     NSDictionary *userInfo = @{@"userName":deliveryAddrCellModel.userName, @"phoneNum":deliveryAddrCellModel.phoneNum, @"addrInfo":addrInfo};
-    NSDictionary *params = @{@"communityId":@"communityId", @"userId":userId, @"userInfo":userInfo, @"fruitInfo":_shoppingCartListModel.toDictionary[@"data"], @"totalPrice":_totalPricePanel.totalPrice};
+    NSDictionary *params = @{@"communityId":@"communityId", @"userId":userId, @"userInfo":userInfo, @"fruitInfo":_shoppingCartListModel.toDictionary[@"data"], @"payType":[NSNumber numberWithInteger:_payType].stringValue};
     UPWMessage* message = [UPWMessage messageCommitOrderWithParams:params];
     __weak typeof(self) wself = self;
     [[UPWHttpMgr instance] sendMessage:message success:^(NSDictionary *responseJSON) {

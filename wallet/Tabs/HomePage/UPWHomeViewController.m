@@ -28,7 +28,7 @@
 
 #define kWheelImageHeight 110
 #define kCatagoryHeight 100
-#define kFreshFruitHeight 200
+#define kFreshFruitHeight 36+kScreenWidth*2/3
 #define kFruitCutHeight kFreshFruitHeight
 #define kFruitJuiceHeight kFreshFruitHeight
 
@@ -520,9 +520,6 @@
 
 - (void)homeTemplateView:(UPWHomeTemplateView *)templateView didSelectMore:(id)sender
 {
-    UPWWelcomeViewController* welcome = ((AppDelegate*)([UIApplication sharedApplication].delegate)).rootViewController;
-    UPWBaseNavigationController *fruitNaviVC = welcome.tabBarController.viewControllers[2];
-    UPWFruitViewController *fruitVC = (UPWFruitViewController *)fruitNaviVC.viewControllers[0];
     self.tabBarController.selectedIndex = 1;
 }
 

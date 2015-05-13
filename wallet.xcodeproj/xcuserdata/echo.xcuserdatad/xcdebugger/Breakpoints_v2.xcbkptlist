@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "wallet/Tabs/ShoppingCart/UPWConfirmOrderViewController.m"
-            timestampString = "453132410.063061"
+            filePath = "wallet/Tabs/HomePage/UPWHomeViewController.m"
+            timestampString = "453220170.862083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "476"
-            endingLineNumber = "476"
-            landmarkName = "-receivedUploadOrderWithParams:"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "-getCatagoryList"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

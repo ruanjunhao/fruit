@@ -22,8 +22,9 @@
 @property (nonatomic, strong) NSString <Optional> *detailUrl;
 @property (nonatomic, strong) NSString <Optional> *localImageName;//图片名字
 @property (nonatomic, copy) NSString<Optional>* subtitle;
-@property (nonatomic, copy) NSString<Optional>* type;//参数：product, page
+@property (nonatomic, copy) NSString<Optional>* type;//参数：product, page, list
 @property (nonatomic, strong) UPWFruitListCellModel<Optional> *product;//如果是产品，此model包含如下信息
+@property (nonatomic, copy) NSString<Optional>* listName;
 
 @end
 
