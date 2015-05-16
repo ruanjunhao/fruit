@@ -304,8 +304,7 @@
 
 - (void)updateFreshFruitListWithParams:(NSDictionary *)params
 {
-    [self didFinishedRefreshing:_freshFruitTableView showPullToRefresh:YES];
-    [self didFinishedInfiniteScrolling:_freshFruitTableView showInfiniteScrolling:_freshFruitListModel.hasMore.boolValue];
+    [self hideNoContentView];
     [self hideNetworkStatusView];
     _freshFruitCommonTableModel.loadMore = NO;
     _freshFruitCommonTableModel.requestPage += 1;
@@ -326,6 +325,9 @@
     }
     
     [_freshFruitTableView reloadData];
+    
+    [self didFinishedRefreshing:_freshFruitTableView showPullToRefresh:YES];
+    [self didFinishedInfiniteScrolling:_freshFruitTableView showInfiniteScrolling:_freshFruitListModel.hasMore.boolValue];
 }
 
 - (void)updateFreshFruitListWithError:(NSError *)error
@@ -362,8 +364,7 @@
 
 - (void)updateFruitCutListWithParams:(NSDictionary *)params
 {
-    [self didFinishedRefreshing:_fruitCutTableView showPullToRefresh:YES];
-    [self didFinishedInfiniteScrolling:_fruitCutTableView showInfiniteScrolling:_fruitCutListModel.hasMore.boolValue];
+    [self hideNoContentView];
     [self hideNetworkStatusView];
     _fruitCutCommonTableModel.loadMore = NO;
     _fruitCutCommonTableModel.requestPage += 1;
@@ -384,6 +385,9 @@
     }
     
     [_fruitCutTableView reloadData];
+    
+    [self didFinishedRefreshing:_fruitCutTableView showPullToRefresh:YES];
+    [self didFinishedInfiniteScrolling:_fruitCutTableView showInfiniteScrolling:_fruitCutListModel.hasMore.boolValue];
 }
 
 - (void)updateFruitCutListWithError:(NSError *)error
@@ -418,8 +422,7 @@
 
 - (void)updateFruitJuiceListWithParams:(NSDictionary *)params
 {
-    [self didFinishedRefreshing:_fruitJuiceTableView showPullToRefresh:YES];
-    [self didFinishedInfiniteScrolling:_fruitJuiceTableView showInfiniteScrolling:_fruitJuiceListModel.hasMore.boolValue];
+    [self hideNoContentView];
     [self hideNetworkStatusView];
     _fruitJuiceCommonTableModel.loadMore = NO;
     _fruitJuiceCommonTableModel.requestPage += 1;
@@ -440,6 +443,9 @@
     }
     
     [_fruitJuiceTableView reloadData];
+    
+    [self didFinishedRefreshing:_fruitJuiceTableView showPullToRefresh:YES];
+    [self didFinishedInfiniteScrolling:_fruitJuiceTableView showInfiniteScrolling:_fruitJuiceListModel.hasMore.boolValue];
 }
 
 - (void)updateFruitJuiceListWithError:(NSError *)error

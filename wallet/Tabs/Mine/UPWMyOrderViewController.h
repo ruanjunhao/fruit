@@ -1,5 +1,5 @@
 //
-//  UPWWaitPayingOrderViewController.h
+//  UPWMyOrderViewController.h
 //  wallet
 //
 //  Created by gcwang on 15/3/24.
@@ -8,6 +8,6 @@
 
 #import "UPWRefreshViewController.h"
 
-@interface UPWWaitPayingOrderViewController : UPWRefreshViewController
+@interface UPWMyOrderViewController : UPWRefreshViewController
 
 @end

@@ -37,6 +37,7 @@
     self = [super init];
     if (self) {
         _pageSource = pageSource;
+        _commonTableModel = [[UPWCommonTableListModel alloc] init];
     }
     
     return self;
@@ -129,8 +130,6 @@
 
 - (void)updateDeliveryAddrListWithParams:(NSDictionary *)params
 {
-    [self didFinishedRefreshing:_tableView showPullToRefresh:YES];
-    [self didFinishedInfiniteScrolling:_tableView showInfiniteScrolling:_deliveryAddrModel.hasMore.boolValue];
     [self hideNetworkStatusView];
     _commonTableModel.loadMore = NO;
     _commonTableModel.requestPage += 1;
@@ -144,6 +143,9 @@
     }
     
     [_tableView reloadData];
+    
+    [self didFinishedRefreshing:_tableView showPullToRefresh:YES];
+    [self didFinishedInfiniteScrolling:_tableView showInfiniteScrolling:_deliveryAddrModel.hasMore.boolValue];
 }
 
 - (void)updateDeliveryAddrListWithError:(NSError *)error

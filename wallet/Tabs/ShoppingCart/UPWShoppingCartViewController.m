@@ -46,6 +46,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.hidesBottomBarWhenPushed = NO;
+        _commonTableModel = [[UPWCommonTableListModel alloc] init];
     }
     return self;
 }
@@ -212,8 +213,6 @@
 
 - (void)receivedWithParams:(NSDictionary *)params
 {
-    [self didFinishedRefreshing:_tableView showPullToRefresh:YES];
-    [self didFinishedInfiniteScrolling:_tableView showInfiniteScrolling:_shoppingCartListModel.hasMore.boolValue];
     [self hideNetworkStatusView];
     _commonTableModel.pullToRefreshing = NO;
     
@@ -233,6 +232,9 @@
     [_tableView reloadData];
     
     [UPWBussUtil refreshCartDot];
+    
+    [self didFinishedRefreshing:_tableView showPullToRefresh:YES];
+    [self didFinishedInfiniteScrolling:_tableView showInfiniteScrolling:_shoppingCartListModel.hasMore.boolValue];
 }
 
 - (void)failedWithError:(NSError *)error

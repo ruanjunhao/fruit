@@ -242,9 +242,8 @@
     __weak typeof(self) wself = self;
     [[UPWHttpMgr instance] sendMessage:message success:^(NSDictionary *responseJSON) {
         // 缓存数据
-        NSDictionary* params = responseJSON;//@{@"data":@[@{@"imageName":@"1", @"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/ic_home_courtesy.png", @"title":@"今日时令"}, @{@"imageName":@"1", @"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/ic_home_courtesy.png", @"title":@"纯干货 "}, @{@"imageName":@"1", @"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/ic_home_courtesy.png", @"title":@"解决方案"}, @{@"imageName":@"1", @"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/ic_home_courtesy.png", @"title":@"企业合作"}]};
-        [UPWFileUtil writeContent:params path:[UPWPathUtil catagoryListPlistPath]];
-        [wself updateCatagoryListWithParams:params];
+        [UPWFileUtil writeContent:responseJSON path:[UPWPathUtil catagoryListPlistPath]];
+        [wself updateCatagoryListWithParams:responseJSON];
     } fail:^(NSError * error) {
         [wself didFinishedRefreshing:_scrollView showPullToRefresh:YES];
         
@@ -303,7 +302,6 @@
 {
     UPWCatagoryCellModel *cellModel = _catagoryListModel.data[index];
     
-    NSString* key = @(index).stringValue;
     UPWFeaturedAppCell *cell = nil;//[_hotAppCellCache objectForKey:key];
     if (!cell)
     {
@@ -318,13 +316,6 @@
 
 - (void)lightGridView:(UPWLightGridView *)lightGridView didSelectAtIndex:(NSInteger)index cell:(UIControl *)cell
 {
-#warning 点击进入相应列表
-//    UPWCatagoryCellModel *cellModel = _catagoryListModel.data[index];
-//    UPWWebViewController *webVC = [[UPWWebViewController alloc] init];
-//    webVC.startPage = cellModel.detailUrl;
-//    [self.navigationController pushViewController:webVC animated:YES];
-//    
-//    
     UPWCatagoryCellModel* model = _catagoryListModel.data[index];
     if ([model.type isEqualToString:UP_STR(@"String_PageType")]) {
         UPWWebViewController *webVC = [[UPWWebViewController alloc] init];
@@ -350,9 +341,8 @@
     __weak typeof(self) wself = self;
     [[UPWHttpMgr instance] sendMessage:message success:^(NSDictionary *responseJSON) {
         // 缓存数据
-        NSDictionary* params =  responseJSON;//@{@"data":@[@{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_1.png", @"detailUrl":@"http://youhui.95516.com/hybrid_v3/html/help/feedback.html"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/tucao2.jpg", @"detailUrl":@"http://www.baidu.com"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_3.png", @"detailUrl":@"http://www.baidu.com"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_2.png", @"detailUrl":@"http://www.baidu.com"}]};
-        [UPWFileUtil writeContent:params path:[UPWPathUtil freshFruitListPlistPath]];
-        [wself updateFreshFruitListWithParams:params];
+        [UPWFileUtil writeContent:responseJSON path:[UPWPathUtil freshFruitListPlistPath]];
+        [wself updateFreshFruitListWithParams:responseJSON];
     } fail:^(NSError * error) {
         [wself didFinishedRefreshing:_scrollView showPullToRefresh:YES];
         
@@ -384,12 +374,9 @@
     UPWMessage* message = [UPWMessage messageFruitListWithParams:params];
     __weak typeof(self) wself = self;
     [[UPWHttpMgr instance] sendMessage:message success:^(NSDictionary *responseJSON) {
-        //        wself.status |= UPWImgHotSecKillComplete;
-        
         // 缓存数据
-        NSDictionary* params = responseJSON;//@{@"data":@[@{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_1.png", @"detailUrl":@"http://youhui.95516.com/hybrid_v3/html/help/feedback.html"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/tucao2.jpg", @"detailUrl":@"http://www.baidu.com"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_3.png", @"detailUrl":@"http://www.baidu.com"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_2.png", @"detailUrl":@"http://www.baidu.com"}]};
-        [UPWFileUtil writeContent:params path:[UPWPathUtil fruitCutListPlistPath]];
-        [wself updateFruitCutListWithParams:params];
+        [UPWFileUtil writeContent:responseJSON path:[UPWPathUtil fruitCutListPlistPath]];
+        [wself updateFruitCutListWithParams:responseJSON];
     } fail:^(NSError * error) {
         [wself didFinishedRefreshing:_scrollView showPullToRefresh:YES];
         
@@ -399,7 +386,6 @@
         if ([params count] > 0 ) {
             [wself updateFruitCutListWithParams:params];
         }
-        //        wself.status |= UPWImgHotSecKillComplete;
     }];
     [self addMessage:message];
 }
@@ -421,12 +407,9 @@
     UPWMessage* message = [UPWMessage messageFruitListWithParams:params];
     __weak typeof(self) wself = self;
     [[UPWHttpMgr instance] sendMessage:message success:^(NSDictionary *responseJSON) {
-        //        wself.status |= UPWImgHotSecKillComplete;
-        
         // 缓存数据
-        NSDictionary* params = responseJSON;//@{@"data":@[@{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_1.png", @"detailUrl":@"http://youhui.95516.com/hybrid_v3/html/help/feedback.html"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/tucao2.jpg", @"detailUrl":@"http://www.baidu.com"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_3.png", @"detailUrl":@"http://www.baidu.com"}, @{@"imageUrl":@"https://mgate.unionpay.com/s/wl/icon/imageHotSeckill_kv_2.png", @"detailUrl":@"http://www.baidu.com"}]};
-        [UPWFileUtil writeContent:params path:[UPWPathUtil fruitJuiceListPlistPath]];
-        [wself updateFruitJuiceListWithParams:params];
+        [UPWFileUtil writeContent:responseJSON path:[UPWPathUtil fruitJuiceListPlistPath]];
+        [wself updateFruitJuiceListWithParams:responseJSON];
     } fail:^(NSError * error) {
         [wself didFinishedRefreshing:_scrollView showPullToRefresh:YES];
         
@@ -436,7 +419,6 @@
         if ([params count] > 0 ) {
             [wself updateFruitJuiceListWithParams:params];
         }
-        //        wself.status |= UPWImgHotSecKillComplete;
     }];
     [self addMessage:message];
 }

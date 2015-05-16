@@ -525,4 +525,19 @@ typedef NS_ENUM(NSInteger, EPayType) {
     #warning 跳转到支付页面
 }
 
+#pragma mark -
+#pragma mark - 去除uitableview headerView的粘性
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat sectionHeaderHeight = kHeightNormalHeader;
+    if (scrollView.contentOffset.y <= sectionHeaderHeight && scrollView.contentOffset.y >= 0)
+    {
+        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+    }
+    else if (scrollView.contentOffset.y >= sectionHeaderHeight)
+    {
+        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+    }
+}
+
 @end

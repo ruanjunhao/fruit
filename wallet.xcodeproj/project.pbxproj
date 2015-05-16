@@ -217,9 +217,9 @@
 		C2D46A151ACD65AB0078D1D2 /* UPWAddToCartPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D46A141ACD65AB0078D1D2 /* UPWAddToCartPanel.m */; };
 		C2D8D4731AB99CCB003A57AF /* UPWAccountInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8D4721AB99CCB003A57AF /* UPWAccountInfoModel.m */; };
 		C2D8D4761AB99F89003A57AF /* UPWAccountInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8D4751AB99F89003A57AF /* UPWAccountInfoTableViewCell.m */; };
-		C2DAC59F1AC1732E0060A88C /* UPWWaitPayingOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAC59E1AC1732E0060A88C /* UPWWaitPayingOrderViewController.m */; };
-		C2DAC5A31AC178D60060A88C /* UPWWaitPayingOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAC5A21AC178D60060A88C /* UPWWaitPayingOrderModel.m */; };
-		C2DAC5A61AC17A810060A88C /* UPWWaitPayingOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAC5A51AC17A810060A88C /* UPWWaitPayingOrderTableViewCell.m */; };
+		C2DAC59F1AC1732E0060A88C /* UPWMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAC59E1AC1732E0060A88C /* UPWMyOrderViewController.m */; };
+		C2DAC5A31AC178D60060A88C /* UPWMyOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAC5A21AC178D60060A88C /* UPWMyOrderModel.m */; };
+		C2DAC5A61AC17A810060A88C /* UPWMyOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAC5A51AC17A810060A88C /* UPWMyOrderTableViewCell.m */; };
 		C2DB0A6E1AB1915700D2855E /* UPWFruitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB0A6D1AB1915700D2855E /* UPWFruitViewController.m */; };
 		C2DB977F1AC2C04300110EE9 /* UPWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB977E1AC2C04300110EE9 /* UPWSettingViewController.m */; };
 		C2DE5CFD1AC02B1E00999D52 /* UPWMineInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DE5CFC1AC02B1E00999D52 /* UPWMineInfoViewController.m */; };
@@ -729,12 +729,12 @@
 		C2D8D4721AB99CCB003A57AF /* UPWAccountInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWAccountInfoModel.m; sourceTree = "<group>"; };
 		C2D8D4741AB99F89003A57AF /* UPWAccountInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWAccountInfoTableViewCell.h; sourceTree = "<group>"; };
 		C2D8D4751AB99F89003A57AF /* UPWAccountInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWAccountInfoTableViewCell.m; sourceTree = "<group>"; };
-		C2DAC59D1AC1732E0060A88C /* UPWWaitPayingOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWWaitPayingOrderViewController.h; sourceTree = "<group>"; };
-		C2DAC59E1AC1732E0060A88C /* UPWWaitPayingOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWWaitPayingOrderViewController.m; sourceTree = "<group>"; };
-		C2DAC5A11AC178D60060A88C /* UPWWaitPayingOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWWaitPayingOrderModel.h; sourceTree = "<group>"; };
-		C2DAC5A21AC178D60060A88C /* UPWWaitPayingOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWWaitPayingOrderModel.m; sourceTree = "<group>"; };
-		C2DAC5A41AC17A810060A88C /* UPWWaitPayingOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWWaitPayingOrderTableViewCell.h; sourceTree = "<group>"; };
-		C2DAC5A51AC17A810060A88C /* UPWWaitPayingOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWWaitPayingOrderTableViewCell.m; sourceTree = "<group>"; };
+		C2DAC59D1AC1732E0060A88C /* UPWMyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWMyOrderViewController.h; sourceTree = "<group>"; };
+		C2DAC59E1AC1732E0060A88C /* UPWMyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWMyOrderViewController.m; sourceTree = "<group>"; };
+		C2DAC5A11AC178D60060A88C /* UPWMyOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWMyOrderModel.h; sourceTree = "<group>"; };
+		C2DAC5A21AC178D60060A88C /* UPWMyOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWMyOrderModel.m; sourceTree = "<group>"; };
+		C2DAC5A41AC17A810060A88C /* UPWMyOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWMyOrderTableViewCell.h; sourceTree = "<group>"; };
+		C2DAC5A51AC17A810060A88C /* UPWMyOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWMyOrderTableViewCell.m; sourceTree = "<group>"; };
 		C2DB0A6C1AB1915700D2855E /* UPWFruitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWFruitViewController.h; sourceTree = "<group>"; };
 		C2DB0A6D1AB1915700D2855E /* UPWFruitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPWFruitViewController.m; sourceTree = "<group>"; };
 		C2DB977D1AC2C04300110EE9 /* UPWSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPWSettingViewController.h; sourceTree = "<group>"; };
@@ -1168,8 +1168,8 @@
 				C2500D571ABAF3AA0007CCCC /* UPRegisterViewController.mm */,
 				C2DE5CFB1AC02B1D00999D52 /* UPWMineInfoViewController.h */,
 				C2DE5CFC1AC02B1E00999D52 /* UPWMineInfoViewController.m */,
-				C2DAC59D1AC1732E0060A88C /* UPWWaitPayingOrderViewController.h */,
-				C2DAC59E1AC1732E0060A88C /* UPWWaitPayingOrderViewController.m */,
+				C2DAC59D1AC1732E0060A88C /* UPWMyOrderViewController.h */,
+				C2DAC59E1AC1732E0060A88C /* UPWMyOrderViewController.m */,
 				C2DB977D1AC2C04300110EE9 /* UPWSettingViewController.h */,
 				C2DB977E1AC2C04300110EE9 /* UPWSettingViewController.m */,
 				C2C87C7519ED12D6000754A7 /* UPWFaceImageView.h */,
@@ -1818,8 +1818,8 @@
 			children = (
 				C2D8D4711AB99CCB003A57AF /* UPWAccountInfoModel.h */,
 				C2D8D4721AB99CCB003A57AF /* UPWAccountInfoModel.m */,
-				C2DAC5A11AC178D60060A88C /* UPWWaitPayingOrderModel.h */,
-				C2DAC5A21AC178D60060A88C /* UPWWaitPayingOrderModel.m */,
+				C2DAC5A11AC178D60060A88C /* UPWMyOrderModel.h */,
+				C2DAC5A21AC178D60060A88C /* UPWMyOrderModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1829,8 +1829,8 @@
 			children = (
 				C2D8D4741AB99F89003A57AF /* UPWAccountInfoTableViewCell.h */,
 				C2D8D4751AB99F89003A57AF /* UPWAccountInfoTableViewCell.m */,
-				C2DAC5A41AC17A810060A88C /* UPWWaitPayingOrderTableViewCell.h */,
-				C2DAC5A51AC17A810060A88C /* UPWWaitPayingOrderTableViewCell.m */,
+				C2DAC5A41AC17A810060A88C /* UPWMyOrderTableViewCell.h */,
+				C2DAC5A51AC17A810060A88C /* UPWMyOrderTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2200,7 +2200,7 @@
 				BC30303619D2A04900E955C3 /* NSObject+Swizzle.m in Sources */,
 				945E14F919E4D3DF005EE92F /* UPXCommonButton.m in Sources */,
 				BC6814C81A47B7F0001FB0B2 /* UPWActionSheet.m in Sources */,
-				C2DAC5A61AC17A810060A88C /* UPWWaitPayingOrderTableViewCell.m in Sources */,
+				C2DAC5A61AC17A810060A88C /* UPWMyOrderTableViewCell.m in Sources */,
 				BC1FDF6419DA8B9F00D35DB1 /* UPWImageUtil.m in Sources */,
 				BC91B3FD19D55B3C007120C0 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				BC30301D19D26AE400E955C3 /* UPWHttpMgr.m in Sources */,
@@ -2217,7 +2217,7 @@
 				C2455D6B19EB68D5000952D6 /* UPWNetworkStatusView.m in Sources */,
 				BC6D473A19ECEEAC00B45A0F /* UPWWebUtility.m in Sources */,
 				BC302FFB19D2680F00E955C3 /* JSONValueTransformer.m in Sources */,
-				C2DAC59F1AC1732E0060A88C /* UPWWaitPayingOrderViewController.m in Sources */,
+				C2DAC59F1AC1732E0060A88C /* UPWMyOrderViewController.m in Sources */,
 				BC91B40319D55B3C007120C0 /* MKNetworkOperation.m in Sources */,
 				BC302FF319D2680F00E955C3 /* JSONModelArray.m in Sources */,
 				BC91B3D819D53715007120C0 /* UPWPathUtil.m in Sources */,
@@ -2269,7 +2269,7 @@
 				BC302FF719D2680F00E955C3 /* JSONAPI.m in Sources */,
 				C2F8A9811AB1BB1F00B72005 /* UPWCommonTableListModel.m in Sources */,
 				BC1FDF4E19DA4C9000D35DB1 /* UPWLocationService.m in Sources */,
-				C2DAC5A31AC178D60060A88C /* UPWWaitPayingOrderModel.m in Sources */,
+				C2DAC5A31AC178D60060A88C /* UPWMyOrderModel.m in Sources */,
 				BC24F87819CFEA9100482832 /* UPWBaseViewController.m in Sources */,
 				BC6D473819ECEEAC00B45A0F /* UPWWebData.m in Sources */,
 				C2E0BDC01AC42B2F004FDBAC /* UPWFruitListModel.m in Sources */,

@@ -1,12 +1,12 @@
 //
-//  UPWWaitPayingOrderTableViewCell.m
+//  UPWMyOrderTableViewCell.m
 //  wallet
 //
 //  Created by gcwang on 15/3/24.
 //  Copyright (c) 2015年 China Unionpay Co.,Ltd. All rights reserved.
 //
 
-#import "UPWWaitPayingOrderTableViewCell.h"
+#import "UPWMyOrderTableViewCell.h"
 #import "UPWLightGridView.h"
 #import "UPImageView.h"
 #import "UPWConst.h"
@@ -14,17 +14,18 @@
 #define kHeightImageList            60
 #define kWidthImageList             60
 
-@interface UPWWaitPayingOrderTableViewCell () <UPWLightGridViewDataSource>
+@interface UPWMyOrderTableViewCell () <UPWLightGridViewDataSource>
 {
     UILabel *_orderId;
+    UILabel *_orderStatus;
     UPWLightGridView *_imageListGridView;
     
-    UPWWaitPayingOrderCellModel *_cellModel;
+    UPWMyOrderCellModel *_cellModel;
 }
 
 @end
 
-@implementation UPWWaitPayingOrderTableViewCell
+@implementation UPWMyOrderTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -32,13 +33,22 @@
     if (self) {
         CGFloat x = 16;
         CGFloat y = 10;
-        CGFloat width = kScreenWidth - 2*x;
-        _orderId = [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, kConstantFont12)];
+        CGFloat width = (kScreenWidth - 2*x)/2;
+        _orderId = [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, kConstantFont14)];
         _orderId.backgroundColor = [UIColor clearColor];
         _orderId.textColor = UP_COL_RGB(0x333333);
-        _orderId.font = [UIFont systemFontOfSize:kConstantFont12];
+        _orderId.font = [UIFont systemFontOfSize:kConstantFont14];
         [self.contentView addSubview:_orderId];
         
+        x = CGRectGetMaxX(_orderId.frame);
+        _orderStatus = [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, kConstantFont14)];
+        _orderStatus.backgroundColor = [UIColor clearColor];
+        _orderStatus.textColor = UP_COL_RGB(0x333333);
+        _orderStatus.textAlignment = NSTextAlignmentRight;
+        _orderStatus.font = [UIFont systemFontOfSize:kConstantFont14];
+        [self.contentView addSubview:_orderStatus];
+        
+        x = CGRectGetMinX(_orderId.frame);
         y = CGRectGetMaxY(_orderId.frame) + 9.5;
         width = kScreenWidth - x;
         UIImageView *lineImageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, width, 0.5)];
@@ -69,10 +79,18 @@
     // Configure the view for the selected state
 }
 
-- (void)setCellWithModel:(UPWWaitPayingOrderCellModel *)cellModel
+NSString* stringOfOrderStatus(NSString *status)
 {
-    _cellModel = [[UPWWaitPayingOrderCellModel alloc] initWithDictionary:cellModel.toDictionary error:nil];
+    NSDictionary *orderStatusDict = @{@(UPWMyOrderStatusNone).stringValue:@"处理中", @(UPWMyOrderStatusWaitToPay).stringValue:@"待支付", @(UPWMyOrderStatusVerifying).stringValue:@"验证中", @(UPWMyOrderStatusProcessing).stringValue:@"处理中", @(UPWMyOrderStatusDeliverying).stringValue:@"配送中", @(UPWMyOrderStatusDeliveryDone).stringValue:@"已送达", @(UPWMyOrderStatusCancel).stringValue:@"取消"};
+    
+    return orderStatusDict[status];
+}
+
+- (void)setCellWithModel:(UPWMyOrderCellModel *)cellModel
+{
+    _cellModel = [[UPWMyOrderCellModel alloc] initWithDictionary:cellModel.toDictionary error:nil];
     _orderId.text = cellModel.orderId;
+    _orderStatus.text = stringOfOrderStatus(cellModel.orderStatus);
     
     [_imageListGridView layoutSubviews];
 }

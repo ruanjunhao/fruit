@@ -11,7 +11,7 @@
 #import "UPWMineViewController.h"
 #import "UPWAccountInfoTableViewCell.h"
 #import "UPWMineInfoViewController.h"
-#import "UPWWaitPayingOrderViewController.h"
+#import "UPWMyOrderViewController.h"
 #import "UPWSettingViewController.h"
 #import "UPWAccountInfoModel.h"
 #import "UPWNotificationName.h"
@@ -280,7 +280,7 @@
     } else if (1 == indexPath.section) {
         if (0 == indexPath.row) {
             //跳转到我的订单
-            UPWWaitPayingOrderViewController *waitPayingOrderVC = [[UPWWaitPayingOrderViewController alloc] init];
+            UPWMyOrderViewController *waitPayingOrderVC = [[UPWMyOrderViewController alloc] init];
             [self.navigationController pushViewController:waitPayingOrderVC animated:YES];
         } else if (1 == indexPath.row) {
            #warning //跳转到我的红包
