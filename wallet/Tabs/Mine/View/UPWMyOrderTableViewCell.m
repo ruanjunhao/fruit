@@ -92,7 +92,7 @@ NSString* stringOfOrderStatus(NSString *status)
     _orderId.text = cellModel.orderId;
     _orderStatus.text = stringOfOrderStatus(cellModel.orderStatus);
     
-    [_imageListGridView layoutSubviews];
+    [_imageListGridView setNeedsLayout];
 }
 
 #pragma mark -

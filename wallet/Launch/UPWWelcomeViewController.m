@@ -91,7 +91,7 @@
         y = 397;
     }
     _rotateAnimationView = [[UPWRotateAnimationView alloc] initWithFrame:CGRectMake((_screenWidth-image.size.width)/2, y, image.size.width, image.size.height)];
-    _rotateAnimationView.image = image;
+    _rotateAnimationView.image = nil;// image;
     [self.view addSubview:_rotateAnimationView];
     [_rotateAnimationView startRotating];
     
