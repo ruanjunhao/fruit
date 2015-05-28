@@ -286,16 +286,16 @@
 - (CGFloat)innerMarginForLightGridView:(UPWLightGridView*)gridView
 {
     // 对于正好4个的时候，平均分配
-    if (_catagoryListModel.data.count == 4) {
-        return (CGRectGetWidth(gridView.bounds) - 4 * UPFloat(kHotAppWidth) - 2 * [gridView.customDataSource borderMarginForLightGridView:gridView])/3;
-    } else {
+//    if (_catagoryListModel.data.count == 4) {
+//        return (CGRectGetWidth(gridView.bounds) - 4 * UPFloat(kHotAppWidth) - 2 * [gridView.customDataSource borderMarginForLightGridView:gridView])/3;
+//    } else {
         return 24;
-    }
+//    }
 }
 
 - (CGSize)itemSizeForLightGridView:(UPWLightGridView*)gridView
 {
-    return CGSizeMake(UPFloat(kHotAppWidth), UPFloat(kHotAppHeight));
+    return CGSizeMake(kHotAppWidth, kHotAppHeight);
 }
 
 - (UIView*)lightGridView:(UPWLightGridView*)gridView cellAtIndex:(NSInteger)index
@@ -306,7 +306,7 @@
     if (!cell)
     {
         // 如果重用cell，在原有图片缓存策略的情况下，图片显示的时候会有不断变化的问题，所以去掉重用
-        cell = [[UPWFeaturedAppCell alloc] initWithFrame:CGRectMake(0, 0, UPFloat(kHotAppWidth), UPFloat(kHotAppHeight))];
+        cell = [[UPWFeaturedAppCell alloc] initWithFrame:CGRectMake(0, 0, kHotAppWidth, kHotAppHeight)];
 //        [_hotAppCellCache setObject:cell forKey:key];
     }
     cell.backgroundColor = [UIColor clearColor];

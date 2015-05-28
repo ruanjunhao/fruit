@@ -26,13 +26,13 @@
     self = [super initWithFrame:frame];
     if (self) {
 
-        CGFloat imageWidth = UPFloat(kHotAppWidth);
-        CGFloat imageHeight = UPFloat(kHotAppWidth);
+        CGFloat imageWidth = kHotAppWidth;
+        CGFloat imageHeight = kHotAppWidth;
 
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake((frame.size.width-imageWidth)/2, UPFloat(15), imageWidth, imageHeight)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake((frame.size.width-imageWidth)/2, 15, imageWidth, imageHeight)];
         [self addSubview:_imageView];
         
-        CGFloat y = CGRectGetMaxY(_imageView.frame) + UPFloat(15);
+        CGFloat y = CGRectGetMaxY(_imageView.frame) + 15;
         _textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, y, frame.size.width, 15)];
         _textLabel.backgroundColor = [UIColor clearColor];
         _textLabel.textColor = UP_COL_RGB(0x666666);

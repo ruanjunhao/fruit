@@ -24,7 +24,7 @@ provisioning_profile_inhouse=~/Library/MobileDevice/Provisioning\ Profiles/953ad
 ##===============发布证书(Appstore)=======bundleid:com.unionpay.chsp================
 
 code_sign_identity_appstore="iPhone Distribution: China Unionpay Co.,Ltd. (P3V7X37F97)"
-provisioning_profile_appstore=~/Library/MobileDevice/Provisioning\ Profiles/180bb0e6-f056-4561-8b4f-ff9a0d6e6166.mobileprovision
+provisioning_profile_appstore=~/Library/MobileDevice/Provisioning\ Profiles/3613b77a-75df-430c-bdcc-c4eff8a2f647.mobileprovision
 
 ##=========================================
 

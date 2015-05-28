@@ -16,10 +16,10 @@ targetName="wallet"
 ##project name
 projectName="wallet"
 
-##===============企业证书(InHouse)========bundleid:com.unionpay.chsp.inhouse========
+##===============发布证书(Appstore)=======bundleid:com.unionpay.chsp================
 
-code_sign_identity_inhouse="iPhone Distribution: China UnionPay Co., Ltd."
-provisioning_profile_inhouse=~/Library/MobileDevice/Provisioning\ Profiles/953ad94a-a4a0-47fd-babf-c8365214577b.mobileprovision
+code_sign_identity_appstore="iPhone Distribution: Wei Huan (KU3VDLV6GH)"
+provisioning_profile_appstore=~/Library/MobileDevice/Provisioning\ Profiles/3613b77a-75df-430c-bdcc-c4eff8a2f647.mobileprovision
 
 ##=========================================
 
@@ -39,17 +39,17 @@ mkdir -p "$ipa_path"
 #打开CHSP工程目录
 cd "$project_path"
 
-#--------------生产环境企业证书版本-------------------------
+#-------------------生产环境发布证书版本------------------------
 #设置编译模式
-build_mode=Inhouse
+build_mode=Distribution
 
 #clean工程
-#xcodebuild clean -configuration $build_mode
+xcodebuild clean -configuration $build_mode
 
 #编译工程
-xcodebuild ARCHS=armv7 \
+xcodebuild ARCHS="armv7 arm64" \
 ONLY_ACTIVE_ARCH=NO \
-GCC_PREPROCESSOR_DEFINITIONS="UP_BUILD_FOR_RELEASE UP_ENABLE_LOG" \
+GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS="UP_BUILD_FOR_RELEASE" \
 -project ${projectName}.xcodeproj \
 -target $targetName \
 -configuration $build_mode \
@@ -58,24 +58,24 @@ build
 
 if [ $? -ne 0 ]
 then
-echo "build release inhouse error!"
+echo "build release distribution error!"
 exit 0
 fi
 
 #打包工程
 appFile="${project_path}/build/${build_mode}-iphoneos/${projectName}.app"
-ipaDir="$ipa_path/fruit_release.ipa"
+ipaDir="$ipa_path/fruit.ipa"
 
-/usr/bin/xcrun -sdk $baseSDK PackageApplication -v "$appFile" -o "$ipaDir" --sign "$code_sign_identity_inhouse" --embed "$provisioning_profile_inhouse"
+/usr/bin/xcrun -sdk $baseSDK PackageApplication -v "$appFile" -o "$ipaDir" --sign "$code_sign_identity_appstore" --embed "$provisioning_profile_appstore"
 
 if [ $? -ne 0 ]
 then
-echo "package release inhouse error!"
+echo "package release distribution error!"
 exit 0
 fi
 
 #生成md5文件
-md5File="$ipa_path/MD5_release.txt"
+md5File="$ipa_path/MD5.txt"
 
 md5 $ipaDir
 ls -l $ipaDir
@@ -83,7 +83,7 @@ md5 -q  $ipaDir &>$md5File
 
 #生成dSYM文件
 dSYMFile="build/${build_mode}-iphoneos/${projectName}.app.dSYM"
-/usr/bin/zip ${ipa_path}/${projectName}.app.dSYM.develop.zip -r ${dSYMFile}
+/usr/bin/zip ${ipa_path}/${projectName}.app.dSYM.appstore.zip -r ${dSYMFile}
 
 #---------------------------------------------检查是否成功---------------------------------------------
 if [ -f "${ipaTar}" ]
