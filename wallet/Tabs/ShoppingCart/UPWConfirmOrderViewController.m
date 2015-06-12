@@ -374,7 +374,7 @@ typedef NS_ENUM(NSInteger, EPayType) {
                                    delegate:self
                                    cancelButtonTitle:UP_STR(@"kBtnCancel")
                                    destructiveButtonTitle:nil
-                                   otherButtonTitles:@"货到付款", @"微信支付", @"支付宝支付" ,nil];
+                                   otherButtonTitles:@"货到付款", nil];//@"微信支付", @"支付宝支付" ,
     actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
     [actionSheet showInView:_contentView];
 }

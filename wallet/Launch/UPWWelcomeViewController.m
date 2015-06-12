@@ -132,9 +132,10 @@
         UP_SHDAT.sysInitModel = [[UPWSysInitModel alloc] initWithDictionary:params error:nil];
         
         //版本更新, 在 sys.init 中也需要处理这个更新版本的, 如果sys.init 成功了, checkversion 返回很慢, 可能走入一个不应该看到的页面, 这里也有问题就是, 网络失败, sys.init 和 checkversion 失败都可以进入客户端不升级
-        NSDictionary* updateInfo = params[@"updateInfo"];
-        UPWUpdateInfoModel* updateModel = [[UPWUpdateInfoModel alloc] initWithDictionary:updateInfo error:nil];
-        [self checkNeedUpdateClient:updateModel];
+        //苹果新要求，客户端不能提示更新
+//        NSDictionary* updateInfo = params[@"updateInfo"];
+//        UPWUpdateInfoModel* updateModel = [[UPWUpdateInfoModel alloc] initWithDictionary:updateInfo error:nil];
+//        [self checkNeedUpdateClient:updateModel];
         
     }
     
@@ -196,7 +197,7 @@
         if ([need_update isEqualToString:@"1"]){
             // 可选升级
             [UPWUiUtil showAlertViewWithTitle:nil message:nil customView:notice cancelButtonTitle:UP_STR(@"String_UpdateLater") otherButtonTitles:@[UP_STR(@"String_UpdateNow")] special:-1 tag:0 completeBlock:^(UPXAlertView *alertView, NSInteger buttonIndex) {
-                if (buttonIndex == 0) {//http://itunes.apple.com/cn/app/id600273928
+                if (buttonIndex == 0) {//http://itunes.apple.com/cn/app/id998533347
                     UP_OPENURL(model.updateUrl);
                 }
             }];

@@ -75,7 +75,8 @@
     
     [self setNaviTitle:@"我"];
     
-    _titleArray = @[@[@"个人信息"], @[@"我的订单", @"我的红包"], @[@"设置"]];//@[@[@"个人信息"], @[@"待支付订单", @"完成订单"], @[@"设置"]]
+    //, @"我的红包"
+    _titleArray = @[@[@"个人信息"], @[@"我的订单"], @[@"设置"]];//@[@[@"个人信息"], @[@"待支付订单", @"完成订单"], @[@"设置"]]
     _accountInfoModel = [[UPWAccountInfoModel alloc] initWithDictionary:@{@"nickname":@"昵称", @"phoneNum":@"手机号", @"headImageUrl":@"", @"localImageName":@""} error:nil];
 
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, _topOffset, CGRectGetWidth(_contentView.frame), CGRectGetHeight(_contentView.frame)) style:UITableViewStylePlain];

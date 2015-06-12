@@ -371,7 +371,7 @@
 #define MAP_API_KEY [UPWAppUtil gaodeMapAppKey]
 
 // 随行：433602054  钱包：600273928
-#define kAppStoreId                   @"600273928"
+#define kAppStoreId                   @"998533347"
 #define kAppName                      @"银联钱包" //@"银联随行"
 #define kUPCallCenter                 @"95516"
 

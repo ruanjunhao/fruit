@@ -33,7 +33,8 @@
     
     [self setNaviTitle:@"设置"];
     
-    _titleArray = @[@[@"去评分", @"欢迎页", @"功能介绍"], @[@"退出登录"]];
+    //, @"欢迎页", @"功能介绍"
+    _titleArray = @[@[@"去评分"], @[@"退出登录"]];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, _topOffset, CGRectGetWidth(_contentView.frame), CGRectGetHeight(_contentView.frame)) style:UITableViewStylePlain];
     _tableView.backgroundColor = UP_COL_RGB(0xefeff4);
